@@ -11,7 +11,7 @@ Android dev is painful. for example, `findViewById()`. some project like [butter
 android:id="@+id/subtitle"
 ```
 
-an alternative approach is use a uniform binding pattern for Java field names and view ids. using this tool, a layout file like this:
+an alternative approach is use a uniform binding pattern between Java field names and view ids. using this tool, a layout file like this:
 
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
