@@ -63,6 +63,6 @@ it will skip (`flatmap`) all the views that has no id. and the field names is ge
 
 * it should be easy to support `include` and `merge` tags, but it is not done yet
 * and should be easy to support inner classes...
-
+* it do not support layout files for multiple folders now. i think you can do this by do not generate `getChildAt` calls, but `view.findViewById()` calls. but be careful with name collision!
 
 
