@@ -3,13 +3,13 @@
 
 Android dev is painful. for example, `findViewById()`. some project like [butterknife](http://jakewharton.github.io/butterknife/) try to solve it by view injection. but is this really a good solution? the ideal way is for one view, only give it a name once. but using view injection, you still need to write the name three times:
 
-    ```java
-    @InjectView(R.id.subtitle) TextView subtitle;
-    ```
+```java
+@InjectView(R.id.subtitle) TextView subtitle;
+```
 
-    ```xml
-    android:id="@+id/subtitle"
-    ```
+```xml
+android:id="@+id/subtitle"
+```
 
 an alternative approach is use a uniform binding pattern for Java field names and view ids. using this tool, a layout file like this:
 
