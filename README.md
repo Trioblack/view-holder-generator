@@ -13,27 +13,28 @@ android:id="@+id/subtitle"
 
 an alternative approach is use a uniform binding pattern for Java field names and view ids. using this tool, a layout file like this:
 
-   ```xml
-   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-       holder="main.MainAct"
-       android:id="@+id/nav">
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    holder="main.MainAct"
+    android:id="@+id/nav">
 
-       <LinearLayout
-           android:id="@+id/profile"
-           style="@style/nav_item">
+    <LinearLayout
+        android:id="@+id/profile"
+        style="@style/nav_item">
 
-           <ImageView
-               style="@style/image"
-               android:id="@+id/image">
+        <ImageView
+            style="@style/image"
+            android:id="@+id/image">
 
-           <TextView
-               style="@style/main_nav_left_item_text"/>
-       </LinearLayout>
-   ```
+        <TextView
+            style="@style/main_nav_left_item_text"/>
+    </LinearLayout>
+</LinearLayout>
+```
 
 will generate code in the `MainAct` class which is specified in the xml `holder` attribute:
 
-   ```Java
+```Java
     LinearLayout _nav;
     LinearLayout _nav_profile;
     ImageView _nav_profile_image;
