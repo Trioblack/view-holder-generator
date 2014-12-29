@@ -57,7 +57,8 @@ then you can use the `__inflate_view_` methods whatever way you want
 
 ## just a demo
 
-it should be easy to support `include` and `merge` tags, but it is not done yet
+* it should be easy to support `include` and `merge` tags, but it is not done yet
+* and should be easy to support inner classes...
 
 
 
