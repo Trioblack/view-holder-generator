@@ -1,7 +1,7 @@
 # view holder generator for Android
 
 
-Android dev is painful. for example, `findViewById()`. some project like [butterknife](jakewharton.github.io/butterknife/) try to solve it by view injection. but is this really a good solution? the ideal way is for one view, only give it a name once. but using view injection, you still need to write the name three times:
+Android dev is painful. for example, `findViewById()`. some project like [butterknife](http://jakewharton.github.io/butterknife/) try to solve it by view injection. but is this really a good solution? the ideal way is for one view, only give it a name once. but using view injection, you still need to write the name three times:
 
     ```java
     @InjectView(R.id.subtitle) TextView subtitle;
